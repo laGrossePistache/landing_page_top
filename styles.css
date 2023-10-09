@@ -1,0 +1,39 @@
+:root {
+    --header-text: #F9FAF8;
+    --header-hero-bg-color: #1F2937
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10%;
+    align-items: center;
+    background-color: var(--header-hero-bg-color);
+    color: var(--header-text);
+}
+
+nav ul {
+    display: flex;
+    gap: 48px;
+}
+
+nav a {
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+nav li {
+    list-style: none;
+    color: var(--header-text);
+}
+
+#hero-section {
+    height: 300px;
+    background-color: var(--header-hero-bg-color);
+}
