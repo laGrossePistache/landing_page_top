@@ -1,12 +1,14 @@
 :root {
     --header-text: #F9FAF8;
-    --header-hero-bg-color: #1F2937
+    --header-hero-bg-color: #1F2937;
+    --quote-bg-color: #E5E7EB;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: roboto, sans-serif;
 }
 
 header {
@@ -36,4 +38,128 @@ nav li {
 #hero-section {
     height: 300px;
     background-color: var(--header-hero-bg-color);
+    padding: 0px 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#hero-section h1{
+    color: var(--header-text);
+    font-size: 2rem;
+}
+
+#hero-section div {
+    width: 300px;
+    height: 156px;
+    color: var(--quote-bg-color)
+}
+
+#hero-section p {
+    padding: 12px 0;
+}
+
+#hero-section button{
+    padding: 6px 12px;
+    background-color: #3882F6;
+    color: var(--header-text);
+    border: none;
+    border-radius: 4px;
+}
+
+#intro-img{
+    background-color: gray;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features-section {
+    height: 350px;
+    padding: 48px 25%;
+    text-align: center;
+
+}
+
+#features-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    margin: 24px 0;
+}
+
+.feature-rectangle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+#quote-section {
+    height: 350px;
+    padding: 24px 30%;
+    background-color: var(--quote-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+#quote {
+    font-size: 1.1rem;
+}
+#author {
+    align-self: flex-end;
+}
+
+#signup-section {
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+#signup-container {
+    background-color: #3882F6;
+    color: var(--header-text);
+    width: 70vw;
+    height: 100px;
+    border-radius: 8px;
+    padding: 12px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#signup-container button{
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid var(--header-text);
+    color: var(--header-text);
+}
+
+footer{
+    height: 80px;
+    background-color: var(--header-hero-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.8rem;
+    color: var(--quote-bg-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--quote-bg-color);
 }
